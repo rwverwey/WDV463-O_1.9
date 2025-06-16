@@ -23,7 +23,6 @@ body {
   line-height: 1.6;
 }
 
-/* Shared Header Styles */
 header {
   background-color: var(--header-bg);
   color: var(--white);
@@ -66,7 +65,6 @@ main {
   padding: 0 1.5rem;
 }
 
-/* Home Page Blog Cards */
 #posts article {
   background-color: var(--white);
   margin-bottom: 2rem;
@@ -96,7 +94,6 @@ main {
   color: var(--primary);
 }
 
-/* Read More Link */
 .read-more {
   display: inline-block;
   margin-top: 1rem;
@@ -111,7 +108,6 @@ main {
   border-color: var(--primary);
 }
 
-/* Individual Post Pages */
 .post-header {
   background-color: #0f2538;
   padding: 2rem 1rem;
@@ -158,4 +154,12 @@ main {
   margin-bottom: 1.5rem;
   color: #333;
   font-size: 1.05rem;
+}
+
+.post img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 1rem auto;
+  border-radius: var(--border-radius);
 }

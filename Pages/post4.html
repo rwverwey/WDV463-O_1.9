@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deploying an API with React</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <header class="post-header">
+        <div class="container">
+            <h1>Ryan's Memory Lane</h1>
+            <p class="tagline">Notes from the journey — tech, tools, and lessons learned</p>
+            <nav>
+                <a href="../index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article class="post">
+            <h2>Deploying an API with React</h2>
+            <img src="../IMAGES/maxresdefault.jpg" alt="React API Deployment Diagram">
+            <p>
+                When you first start building full-stack apps, the backend and frontend often feel like two separate
+                planets. But the moment you deploy them together, everything becomes real. Real problems, real configs,
+                real CORS errors. I used to think getting my frontend live was the finish line. It’s not. Getting your
+                frontend to talk to a secure, hosted API is the real finish line.
+            </p>
+            <p>
+                I’ve started being a lot more mindful about how my React apps talk to the backend. When I’m working locally, the app connects to my computer. But when I push it live, it needs to talk to the real API. To make that switch clean, I use a settings file that tells the app which one to use based on where it’s running. I also stopped hardcoding URLs, it causes too many headaches. I've kept all that connection logic in one place, which makes it way easier to update later.
+            </p>
+            <p>
+                I’d like to try using token-based authentication, and here’s why. I don’t want to leave my API wide open, but I also don’t need the overhead of setting up a full login system for a lightweight app. Tokens feel like a good middle ground. The idea is simple: once the user logs in, the app gets a token and attaches it to every request. What I like about this approach is that it keeps things stateless and clean. If a token expires, I can just prompt the user to log in again. It’s not perfect, and I know I’ll need to be careful about how the token is stored and refreshed, but it seems like a solid step toward building something more secure without overcomplicating things.
+            </p>
+        </article>
+    </main>
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>
